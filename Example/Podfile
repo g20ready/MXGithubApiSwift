@@ -1,0 +1,16 @@
+use_frameworks!
+
+target 'MXGithubApiSwift_Example' do
+    
+    pod 'MXGithubApiSwift', :path => '../'
+    
+    
+
+
+    target 'MXGithubApiSwift_Tests' do
+        inherit! :search_paths
+
+        pod 'Quick', '~> 1.0.0'
+        pod 'Nimble', '~> 5.1.1'
+    end
+end
