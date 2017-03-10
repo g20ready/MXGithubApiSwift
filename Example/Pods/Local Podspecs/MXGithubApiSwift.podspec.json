@@ -19,7 +19,16 @@
     "ios": "8.0"
   },
   "source_files": "MXGithubApiSwift/Classes/**/*.swift",
-  "resources": [
-    "MXGithubApiSwift/**/*.xib"
-  ]
+  "resource_bundles": {
+    "MXGithubApiSwift": [
+      "MXGithubApiSwift/**/*.xib"
+    ]
+  },
+  "ios": {
+    "dependencies": {
+      "Alamofire": [
+        "~> 4.4"
+      ]
+    }
+  }
 }

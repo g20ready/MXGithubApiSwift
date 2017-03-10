@@ -17,7 +17,7 @@ class UrlContentSpec: QuickSpec {
         describe("validate urls") {
             
             it("authUrl") {
-                let authUrl = Constants.Github.Api.Urls.getAuthUrl("4f8c51b7a0f0be7cee0c")
+                let authUrl = Constants.Github.Api.Urls.getUserUrl("4f8c51b7a0f0be7cee0c")
                 expect(authUrl) == "https://github.com/login/oauth/authorize?scope=user:email&client_id=4f8c51b7a0f0be7cee0c"
             }
             

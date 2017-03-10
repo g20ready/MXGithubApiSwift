@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GithubAuthViewController" customModule="MXGithubApiSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="6nF-FD-1ru" id="zQI-7t-uym"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="Mpl-kr-SHN" id="zrf-Rx-DFK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpl-kr-SHN">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="1qm-Ul-fLK"/>
+                    </connections>
+                </webView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uz7-Pt-PXj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <items>
+                        <barButtonItem title="Dismiss" id="SsZ-29-Yqr">
+                            <connections>
+                                <action selector="dismissButtonClickedWithSender:" destination="-1" id="Pc0-QY-9K5"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6nF-FD-1ru">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                    <color key="color" red="0.062745098040000002" green="0.38823529410000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mpl-kr-SHN" secondAttribute="trailing" id="0AL-h4-4jj"/>
+                <constraint firstItem="Uz7-Pt-PXj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9ir-vY-74f"/>
+                <constraint firstAttribute="trailing" secondItem="Uz7-Pt-PXj" secondAttribute="trailing" id="QIk-ey-iRp"/>
+                <constraint firstItem="6nF-FD-1ru" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TRH-YO-xZp"/>
+                <constraint firstAttribute="bottom" secondItem="Mpl-kr-SHN" secondAttribute="bottom" id="WZa-Bd-csJ"/>
+                <constraint firstItem="6nF-FD-1ru" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZlY-GV-70e"/>
+                <constraint firstItem="Uz7-Pt-PXj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hgT-is-ZJ0"/>
+                <constraint firstItem="Mpl-kr-SHN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iuN-k4-Yxu"/>
+                <constraint firstItem="Mpl-kr-SHN" firstAttribute="top" secondItem="Uz7-Pt-PXj" secondAttribute="bottom" id="rkz-jW-d98"/>
+            </constraints>
+            <point key="canvasLocation" x="156" y="64"/>
+        </view>
+    </objects>
+</document>

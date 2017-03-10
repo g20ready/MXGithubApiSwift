@@ -1,5 +1,7 @@
 PODS:
-  - MXGithubApiSwift (0.1.0)
+  - Alamofire (4.4.0)
+  - MXGithubApiSwift (0.1.0):
+    - Alamofire (~> 4.4)
   - Nimble (5.1.1)
   - Quick (1.0.0)
 
@@ -13,10 +15,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MXGithubApiSwift: e30e5d8048b23f23e0c815cff5b945b203ddd30d
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  MXGithubApiSwift: c3fc98a8633c19d725323e37f5101103dc6cf574
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
 
-PODFILE CHECKSUM: 12cf699164e88ff48c12b234c069a06f8d59398c
+PODFILE CHECKSUM: ee1a9c6876642a419e46b9f76c2d71b191973390
 
 COCOAPODS: 1.2.0
